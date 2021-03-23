@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyttsx3 = "*"
+speechrecognition = "==1.2.3"
+pipwin = "*"
+wikipedia = "*"
+pywhatkit = "*"
+instaloader = "==2.0"
+pypdf2 = "*"
+pyqt5 = "*"
+pyqt5-tools = "*"
+psutil = "*"
+pytube = "*"
+geocoder = "*"
+loc = "*"
+pywikihow = "*"
+speedtest-cli = "*"
+twilio = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.9"
