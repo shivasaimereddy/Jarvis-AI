@@ -222,6 +222,7 @@ def commands():
 
         elif "ip address" in query:
             ip = requests.get('https://api.ipify.org').text
+            print(ip)
             speak(f"your ip address is {ip}")
 
         elif "where am i" in query:
@@ -352,6 +353,15 @@ def commands():
 
         elif "whats app" in query:
             kit.sendwhatmsg("enter number", "Jarvis test message", 2, 25)
+
+        elif "volume up" in query:
+            pyautogui.press("volumeup")
+
+        elif "volume down" in query:
+            pyautogui.press("volumedown")
+
+        elif "volume mute" in query or "mute" in query:
+            pyautogui.press("volumemute")
 
         elif "screenshot" in query:
             speak("suggest a name for screenshot")
